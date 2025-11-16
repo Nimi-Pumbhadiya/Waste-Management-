@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Waste Management | WorkDo</title>
+        <meta name="author" content="Workdo" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="description"
+            content="Waste Management by Workdo is a smart solution to manage waste collection, disposal schedules, and environmental requests efficiently.">
+        <meta name="keywords"
+            content="Waste Management, Waste Collection, Workdo, Disposal Management, Collection Scheduling, Environmental Requests, Waste Dashboard">
+        <link rel="icon" href="assets/images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+    </head>
+
+    <body>
+        <div class="overlay"></div>
+        <div
+            class="bg-primary text-white py-2.5 relative overflow-hidden hidden lg:block">
+            <div class="md:container w-full mx-auto px-4">
+                <p class="text-center text-sm">"Manage waste responsibly for a cleaner tomorrow."</p>
+            </div>
+        </div>
+        <header
+            class="sticky top-0 w-full z-[3] bg-white shadow-sm transition-all">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="logo-col flex-1">
+                        <h1>
+                            <a href="index.html"
+                                class="md:max-w-[140px] max-w-[110px] w-full block">
+                                <img src="assets/images/logo.png"
+                                    alt="Waste Management Logo" loading="lazy">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="hidden lg:block">
+                        <ul class="flex items-center lg:gap-x-8 gap-x-4">
+                            <li>
+                                <a href="service-list.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Service</a>
+                            </li>
+                            <li> <a href="about.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">About</a>
+                            </li>
+                            <li> <a href="blog.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Faq</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div
+                        class="hidden lg:flex items-center gap-x-4 justify-end flex-1">
+                        <div
+                            class="relative md:inline-block hidden text-start h-auto"
+                            id="language-dropdown-desktop">
+                            <button type="button"
+                                class="inline-flex items-center h-full justify-center min-w-28 rounded-tl-lg rounded-br-lg text-black border border-black lg:px-4 px-3 py-2 bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary !leading-[1.4]"
+                                id="language-button-desktop">
+                                <span id="selected-language-desktop"
+                                    class="flex-1">English</span>
+                                <i class="fas fa-chevron-down ms-2"></i>
+                            </button>
+                            <div
+                                class="origin-top-right absolute end-0 mt-2 w-full shadow-lg rounded-tl-lg rounded-br-lg overflow-hidden bg-white ring-1 border border-black ring-black ring-opacity-5 focus:outline-none transition-all transform duration-100 hidden"
+                                id="language-menu-desktop">
+                                <div >
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="English">English</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="Spanish">Spanish</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="French">French</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="German">German</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="booking.html"
+                            class="btn !px-4 !py-2.5">Book Now</a>
+                    </div>
+
+                    <button class="lg:hidden" id="mobile-menu-toggle">
+                        <i class="fas fa-bars md:text-lg text-base"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+ 
+        <main>
+            <section class="lg:py-16 py-10 relative z-[1]">
+                <div class="common-banner-bg absolute inset-0 w-full h-full z-[-1]">
+                    <img src="assets/images/common-banner-bg.png" alt="background-image" loading="lazy" class="w-full h-full object-cover rtl:scale-x-[-1]">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="md:container w-full mx-auto px-4">
+                    <div class="text-white text-center">
+                        <h2 class="lg:text-5xl sm:text-4xl text-3xl !leading-[1] font-semibold font-heading">Terms & Conditions</h2>
+                        <ul class="md:mt-4 mt-3 flex flex-wrap items-center  capitalize justify-center md:text-base text-sm">
+                            <li class="flex items-center capitalize">
+                                <a href="index.html">Home</a>
+                                <i class="fas fa-chevron-right mx-2 text-xs rtl:scale-x-[-1]"></i>
+                            </li>
+                            <li class="capitalize">Terms & Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Terms Content Section -->
+            <section class="py-10 lg:py-16">
+                <div class="md:container w-full mx-auto px-4">
+                    <div class="max-w-4xl mx-auto border border-gray-200 rounded-lg p-4">
+                        <!-- Header -->
+                        <div class="mb-4">
+                            <p class="text-black text-sm md:text-base">Last updated: January 2024</p>
+                        </div>
+                        
+                        <!-- Service Agreement -->
+                        <div class="mb-4 md:mb-8">
+                            <div class="flex items-center gap-3 mb-3 md:mb-6">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-handshake text-white md:text-lg text-base"></i>
+                                </div>
+                                <h3 class="md:text-2xl text-xl lg:text-3xl">Service Agreement</h3>
+                            </div>
+                            <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl p-4 md:p-6 border">
+                                <div class="space-y-2 md:space-y-4">
+                                    <div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Service Acceptance</h3>
+                                        <p class="text-gray-700">By using our waste management services, you agree to these terms and conditions. Services include waste collection, disposal, recycling, and related environmental services.</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Service Scope</h3>
+                                        <p class="text-gray-700">Our services cover residential and commercial waste collection, recycling programs, and disposal management according to local environmental regulations.</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Customer Obligations</h3>
+                                        <p class="text-gray-700">Customers must properly sort waste, follow collection schedules, and ensure safe access to collection points for our service teams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment & Billing -->
+                        <div class="mb-4 md:mb-8">
+                            <div class="flex items-center gap-3 mb-3 md:mb-6">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-credit-card text-white md:text-lg text-base"></i>
+                                </div>
+                                <h3 class="md:text-2xl text-xl lg:text-3xl">Payment & Billing Terms</h3>
+                            </div>
+                            <div class="grid sm:grid-cols-2 gap-3 md:gap-6">
+                                <div class="bg-white border border-gray-200 rounded-tl-3xl rounded-br-3xl p-4 md:p-6">
+                                    <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mb-3">
+                                        <i class="fas fa-calendar-alt text-white"></i>
+                                    </div>
+                                    <h3 class="text-lg  text-gray-800 mb-2">Billing Cycle</h3>
+                                    <p class="text-gray-700">Services are billed monthly in advance. Payment is due within 30 days of invoice date to maintain uninterrupted service.</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-tl-3xl rounded-br-3xl p-4 md:p-6">
+                                    <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mb-3">
+                                        <i class="fas fa-exclamation-triangle text-white"></i>
+                                    </div>
+                                    <h3 class="text-lg  text-gray-800 mb-2">Late Payments</h3>
+                                    <p class="text-gray-700 line-clamp-3">Late payment fees may apply after 30 days. Services may be suspended for accounts overdue by 60 days or more.</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-tl-3xl rounded-br-3xl p-4 md:p-6">
+                                    <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mb-3">
+                                        <i class="fas fa-undo text-white"></i>
+                                    </div>
+                                    <h3 class="text-lg  text-gray-800 mb-2">Refund Policy</h3>
+                                    <p class="text-gray-700 line-clamp-3">Refunds are available for unused services with 30 days notice. Processing fees may apply for service cancellations.</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 rounded-tl-3xl rounded-br-3xl p-4 md:p-6">
+                                    <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mb-3">
+                                        <i class="fas fa-file-invoice-dollar text-white"></i>
+                                    </div>
+                                    <h3 class="text-lg  text-gray-800 mb-2">Additional Charges</h3>
+                                    <p class="text-gray-700 line-clamp-3">Extra fees may apply for oversized items, hazardous materials, or services outside regular collection schedules.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Limitations -->
+                        <div class="mb-4 md:mb-8">
+                            <div class="flex items-center gap-3 mb-3 md:mb-6">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-exclamation-circle text-white md:text-lg text-base"></i>
+                                </div>
+                                <h3 class="md:text-2xl text-xl lg:text-3xl">Service Limitations & Liability</h3>
+                            </div>
+                            <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl p-4 md:p-6 border">
+                                <div class="grid sm:grid-cols-3 gap-3 md:gap-6">
+                                    <div class="text-center">
+                                        <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mx-auto mb-4">
+                                            <i class="fas fa-ban text-white md:text-lg text-base"></i>
+                                        </div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Prohibited Items</h3>
+                                        <p class="text-gray-700 text-sm line-clamp-3">Hazardous materials, medical waste, and certain chemicals are not accepted in regular collection.</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mx-auto mb-4">
+                                            <i class="fas fa-cloud-rain text-white md:text-lg text-base"></i>
+                                        </div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Weather Delays</h3>
+                                        <p class="text-gray-700 text-sm line-clamp-3">Services may be delayed due to severe weather conditions or other circumstances beyond our control.</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="md:w-10 md:h-10 w-8 h-8 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mx-auto mb-4">
+                                            <i class="fas fa-balance-scale text-white md:text-lg text-base"></i>
+                                        </div>
+                                        <h3 class="text-lg  text-gray-800 mb-2">Liability Limits</h3>
+                                        <p class="text-gray-700 text-sm line-clamp-3">Our liability is limited to the value of services provided and excludes consequential damages.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Termination & Cancellation -->
+                        <div class="mb-4 md:mb-8">
+                            <div class="flex items-center gap-3 mb-3 md:mb-6">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-times-circle text-white md:text-lg text-base"></i>
+                                </div>
+                                <h3 class="md:text-2xl text-xl lg:text-3xl">Termination & Cancellation</h3>
+                            </div>
+                            <div class="bg-gray-50 rounded-tl-3xl rounded-br-3xl border p-4 md:p-6">
+                                <div class="grid sm:grid-cols-2 gap-3 md:gap-6">
+                                    <div class="space-y-2 md:space-y-4">
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-calendar-times text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Notice Period</h4>
+                                                <p class="text-gray-700 text-sm">30 days written notice required for service cancellation or significant changes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-user-times text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Customer Termination</h4>
+                                                <p class="text-gray-700 text-sm">Customers may terminate services with notice and payment of outstanding balances.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-gavel text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Breach of Terms</h4>
+                                                <p class="text-gray-700 text-sm">We may terminate services immediately for violation of terms or non-payment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2 md:space-y-4">
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-handshake text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Final Settlement</h4>
+                                                <p class="text-gray-700 text-sm">All outstanding charges must be settled within 30 days of termination.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-recycle text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Equipment Return</h4>
+                                                <p class="text-gray-700 text-sm">All company-provided containers and equipment must be returned in good condition.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start gap-3">
+                                            <i class="fas fa-redo text-primary mt-1"></i>
+                                            <div>
+                                                <h4 class="mb-1">Service Resumption</h4>
+                                                <p class="text-gray-700 text-sm">Reactivation fees may apply for resuming services after termination.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="bg-gray-50 border border-gray-200 rounded-tl-3xl rounded-br-3xl p-4 md:p-6 text-center">
+                            <div class="max-w-2xl mx-auto">
+                                <div class="w-10 h-10 bg-primary rounded-tl-lg rounded-br-lg flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-gavel text-white md:text-lg text-base"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl lg:text-3xl  text-gray-800 mb-3">Questions About Terms?</h3>
+                                <p class="text-gray-700 mb-6">If you have any questions about these terms and conditions or need clarification on our service policies, please contact us.</p>
+                                <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
+                                    <a href="mailto:info@clearbin.com" class="btn btn-secondary w-full">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="break-all sm:break-normal">info@clearbin.com</span>
+                                    </a>
+                                    <a href="tel:+15551234567" class="btn w-full">
+                                        <i class="fas fa-phone"></i>
+                                        +1 (555) 123-4567
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Creative Footer -->
+        <footer class="bg-primary text-white relative overflow-hidden z-[1] lg:pt-16 pt-10">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-8 gap-6">
+                    <!-- Company Info -->
+                    <div class="space-y-4">
+        <a href="index.html" class="md:max-w-[140px] max-w-[110px] w-full block">
+                            <img src="assets/images/footer-logo.png" alt="Waste Management" class="w-full h-full">
+                        </a>
+                        <p>Creating a cleaner, greener future through innovative waste management solutions.</p>
+                        <div class="flex md:gap-x-4 gap-x-3">
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-recycle me-2"></i>
+                            Quick Links
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li><a href="service-list.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Service</a></li>
+                            <li><a href="about.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>About</a></li>
+                            <li><a href="faq.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>FAQ</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-leaf me-2"></i>
+                            Our Services
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-trash me-2"></i>Waste Collection</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-recycle me-2"></i>Recycling Services</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-truck me-2"></i>Disposal Management</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-calendar me-2"></i>Scheduled Pickups</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            Get In Touch
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="flex items-start">
+                                <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                                123 Green Street, Eco City, EC 12345
+                            </p>
+                            <p class="flex items-center">
+                        <i class="fas fa-phone me-3"></i>
+                       <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope me-3"></i>
+                        <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                    </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div class="border-t border-white/20 md:mt-8 mt-6 md:py-6 py-4 flex flex-col sm:flex-row justify-between sm:items-center">
+                    <p class="mb-3 sm:mb-0">
+                        © 2025 Waste Management by WorkDo. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-4 md:text-base text-sm">
+                        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 end-0 z-50 bg-white shadow-xl transform translate-x-full rtl:-translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+            <div class="flex justify-between items-center p-4 border-b">
+            <a href="index.html" class="block max-w-[100px] w-full">
+                    <img src="assets/images/logo.png" alt="Boutique Designer Studio Logo" class="logo-img">
+                </a>
+            <button id="close-mobile-menu" class="text-gray-700 hover:text-primary transition-colors">
+                <i class="fas fa-times md:text-lg text-base"></i>
+            </button>
+            </div>
+            <div>
+                <div class="grid grid-cols-2 gap-3 p-4 border-b">
+                    <div class="relative block text-start h-auto" id="language-dropdown-mobile">
+                    <button type="button"
+                        class="inline-flex !leading-[1.4] items-center md:text-base text-sm rounded-tl-lg rounded-br-lg h-full justify-start text-start w-full text-black border border-black px-4 py-[7.5px] bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary"
+                        id="language-button-mobile">
+                        <span id="selected-language-mobile" class="flex-1">English</span>
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </button>
+                    <div
+                        class="origin-top-right absolute rounded-tl-lg rounded-br-lg end-0 mt-2 w-full shadow-lg bg-white border-black border transition-all transform duration-100 hidden"
+                        id="language-menu-mobile">
+                        <div >
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="English">English</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="Spanish">Spanish</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="French">French</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="German">German</a>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="booking.html" class="btn !px-4 !py-2.5 btn-secondary">Book Now</a>
+                </div>
+                <ul class="flex flex-col space-y-2.5 md:text-base text-sm p-4 m-4 border rounded-tl-lg rounded-br-lg shadow-sm">
+                    <li> <a href="service-list.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Service</a>
+                    </li>
+                    <li> <a href="about.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">About</a>
+                    </li>
+                    <li> <a href="blog.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Blog</a>
+                    </li>
+                    <li> <a href="faq.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Faq</a>
+                    </li>
+                    <li> <a href="contact.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Contact</a>
+                    </li>
+                </ul>
+                <div class="p-4 border-t">
+                    <div class="p-4 border space-y-2.5 shadow-sm md:text-base text-sm rounded-tl-lg rounded-br-lg">
+                        <span class="flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                        </span>
+                        <div class="flex items-center">
+                            <p>Follow Us :</p>
+                            <div class="flex items-center gap-4 ms-4">
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

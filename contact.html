@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Waste Management | WorkDo</title>
+        <meta name="author" content="Workdo" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="description"
+            content="Waste Management by Workdo is a smart solution to manage waste collection, disposal schedules, and environmental requests efficiently.">
+        <meta name="keywords"
+            content="Waste Management, Waste Collection, Workdo, Disposal Management, Collection Scheduling, Environmental Requests, Waste Dashboard">
+        <link rel="icon" href="assets/images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+    </head>
+
+    <body>
+        <div class="overlay"></div>
+        <div
+            class="bg-primary text-white py-2.5 relative overflow-hidden hidden lg:block">
+            <div class="md:container w-full mx-auto px-4">
+                <p class="text-center text-sm">"Manage waste responsibly for a cleaner tomorrow."</p>
+            </div>
+        </div>
+        <header
+            class="sticky top-0 w-full z-[3] bg-white shadow-sm transition-all">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="logo-col flex-1">
+                        <h1>
+                            <a href="index.html"
+                                class="md:max-w-[140px] max-w-[110px] w-full block">
+                                <img src="assets/images/logo.png"
+                                    alt="Waste Management Logo" loading="lazy">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="hidden lg:block">
+                        <ul class="flex items-center lg:gap-x-8 gap-x-4">
+                            <li>
+                                <a href="service-list.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Service</a>
+                            </li>
+                            <li> <a href="about.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">About</a>
+                            </li>
+                            <li> <a href="blog.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Faq</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div
+                        class="hidden lg:flex items-center gap-x-4 justify-end flex-1">
+                        <div
+                            class="relative md:inline-block hidden text-start h-auto"
+                            id="language-dropdown-desktop">
+                            <button type="button"
+                                class="inline-flex items-center h-full justify-center min-w-28 rounded-tl-xl rounded-br-xl text-black border border-black lg:px-4 px-3 py-2 bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary !leading-[1.4]"
+                                id="language-button-desktop">
+                                <span id="selected-language-desktop"
+                                    class="flex-1">English</span>
+                                <i class="fas fa-chevron-down ms-2"></i>
+                            </button>
+                            <div
+                                class="origin-top-right absolute end-0 mt-2 w-full shadow-lg rounded-tl-xl rounded-br-xl overflow-hidden bg-white ring-1 border border-black ring-black ring-opacity-5 focus:outline-none transition-all transform duration-100 hidden"
+                                id="language-menu-desktop">
+                                <div >
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="English">English</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="Spanish">Spanish</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="French">French</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="German">German</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="booking.html"
+                            class="btn !px-4 !py-2.5">Book Now</a>
+                    </div>
+
+                    <button class="lg:hidden" id="mobile-menu-toggle">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+        <section class="lg:py-16 py-10 relative z-[1]">
+            <div class="common-banner-bg absolute inset-0 w-full h-full z-[-1]">
+                <img src="assets/images/common-banner-bg.png" alt="background-image" loading="lazy" class="w-full h-full object-cover rtl:scale-x-[-1]">
+                <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <div class="md:container w-full mx-auto px-4">
+                <div class="text-white text-center">
+                    <h2 class="lg:text-5xl sm:text-4xl text-3xl !leading-[1] font-semibold font-heading">Contact Us</h2>
+                    <ul class="md:mt-4 mt-3 flex flex-wrap items-center  capitalize justify-center md:text-base text-sm">
+                        <li class="flex items-center capitalize">
+                            <a href="index.html">Home</a>
+                            <i class="fas fa-chevron-right mx-2 text-xs rtl:scale-x-[-1]"></i>
+                        </li>
+                        <li class="capitalize">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 lg:py-16">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
+                    <div class="border border-gray-200 bg-white p-4 lg:p-6 rounded-tl-3xl rounded-br-3xl shadow-md flex flex-col h-full">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 mx-auto text-lg md:text-xl bg-primary rounded-tl-xl rounded-br-xl flex items-center justify-center shadow-md">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                        <div class="pt-3 md:pt-4 text-center flex-1">
+                            <h3 class="text-xl mb-2">Call Us Now</h3>
+                            <p class="text-gray-700 md:mb-3 mb-2">Speak with our experts for any query.</p>   
+                            <a href="tel:+1-555-123-4567">
+                                +1 (555) 123-4567
+                            </a>                        
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 bg-white p-4 lg:p-6 rounded-tl-3xl rounded-br-3xl shadow-md flex flex-col h-full">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 mx-auto text-lg md:text-xl bg-secondary rounded-tl-xl rounded-br-xl flex items-center justify-center shadow-md">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div class="pt-3 md:pt-4 text-center">
+                            <h3 class="text-xl mb-2">Email Support</h3>
+                            <p class="text-gray-700 md:mb-3 mb-2">Send us your questions anytime.</p>   
+                            <a href="mailto:info@clearbin.com"
+                            class="break-all">
+                            info@clearbin.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 bg-white p-4 lg:p-6 rounded-tl-3xl rounded-br-3xl shadow-md flex flex-col h-full">
+                        <div
+                            class="w-10 h-10 md:w-12 md:h-12 mx-auto text-lg md:text-xl bg-primary rounded-tl-xl rounded-br-xl flex items-center justify-center shadow-md">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="pt-3 md:pt-4 text-center">
+                            <h3 class="text-xl mb-2">Visit Our Office</h3>
+                            <p class="text-gray-700 md:mb-3 mb-2">Meet our team for consultations.</p>     
+                            <p>
+                                123 Green Street, Eco City, EC 12345<br>
+                            </p>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Form Section -->
+
+        <section class="py-10 lg:py-16 bg-gray-50">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="bg-primary p-4 md:p-6 text-white">
+                                <h2 class="md:text-2xl text-xl">Send Us a Message</h2>
+                            </div>
+                            <div class="p-4 md:p-6">
+                                <form class="md:space-y-5 space-y-3">
+                                    <div class="grid sm:grid-cols-2 md:gap-5 gap-3">
+                                        <div>
+                                            <label class="block font-semibold mb-1.5 text-sm">First Name<sup>*</sup></label>
+                                            <input type="text" required placeholder="Enter your first name"
+                                                class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300">
+                                        </div>
+                                        <div>
+                                            <label class="block font-semibold mb-1.5 text-sm">Last Name<sup>*</sup></label>
+                                            <input type="text" required placeholder="Enter your last name"
+                                                class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300">
+                                        </div>
+                                    </div>
+
+                                    <div class="grid sm:grid-cols-2 gap-3 md:gap-6">
+                                        <div>
+                                            <label class="block font-semibold mb-1.5 text-sm">Email Address<sup>*</sup></label>
+                                            <input type="email" required placeholder="Enter your email"
+                                                class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300 ">
+                                        </div>
+                                        <div>
+                                            <label class="block font-semibold mb-1.5 text-sm">Phone Number</label>
+                                            <input type="tel" placeholder="Enter your contact number"
+                                                class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300 ">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block font-semibold mb-1.5 text-sm">Subject<sup>*</sup></label>
+                                        <select required
+                                            class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300">
+                                            <option value="">Choose your inquiry type</option>
+                                            <option value="general">General Information</option>
+                                            <option value="service">Service Request</option>
+                                            <option value="billing">Billing & Pricing</option>
+                                            <option value="complaint">Service Issue</option>
+                                            <option value="partnership">Partnership Opportunity</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label class="block font-semibold mb-1.5 text-sm">Your Message<sup>*</sup></label>
+                                        <textarea rows="3" required
+                                            placeholder="Tell us about your waste management needs..."
+                                            class="form-input w-full px-4 py-2 border border-gray-200 rounded-lg transition-all duration-300 resize-none"></textarea>
+                                    </div>
+
+                                    <a href="javascript:void(0);" class="w-full btn">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Send Message
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Sidebar -->
+                    <div>
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full">
+                            <div class="bg-primary p-4  md:p-6 text-white">
+                                <h2 class="md:text-2xl text-xl">
+                                    Our Office Location
+                                </h2>
+                            </div>
+                            <div class="bg-white rounded-lg flex-1">
+                                <div class="h-56 md:h-96 lg:h-full">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50039.97193649962!2d72.8920057165679!3d21.222203925610316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1698927319352!5m2!1sen!2sin"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+        <!-- Creative Footer -->
+        <footer class="bg-primary text-white relative overflow-hidden z-[1] lg:pt-16 pt-10">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-8 gap-6">
+                    <!-- Company Info -->
+                    <div class="space-y-4">
+        <a href="index.html" class="md:max-w-[140px] max-w-[110px] w-full block">
+                            <img src="assets/images/footer-logo.png" alt="Waste Management" class="w-full h-full">
+                        </a>
+                        <p>Creating a cleaner, greener future through innovative waste management solutions.</p>
+                        <div class="flex md:gap-x-4 gap-x-3">
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-recycle me-2"></i>
+                            Quick Links
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li><a href="service-list.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Service</a></li>
+                            <li><a href="about.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>About</a></li>
+                            <li><a href="faq.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>FAQ</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-leaf me-2"></i>
+                            Our Services
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-trash me-2"></i>Waste Collection</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-recycle me-2"></i>Recycling Services</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-truck me-2"></i>Disposal Management</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-calendar me-2"></i>Scheduled Pickups</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            Get In Touch
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="flex items-start">
+                                <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                                123 Green Street, Eco City, EC 12345
+                            </p>
+                            <p class="flex items-center">
+                        <i class="fas fa-phone me-3"></i>
+                       <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope me-3"></i>
+                        <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                    </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div class="border-t border-white/20 md:mt-8 mt-6 md:py-6 py-4 flex flex-col sm:flex-row justify-between sm:items-center">
+                    <p class="mb-3 sm:mb-0">
+                        © 2025 Waste Management by WorkDo. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-4 md:text-base text-sm">
+                        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 end-0 z-50 bg-white shadow-xl transform translate-x-full rtl:-translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+            <div class="flex justify-between items-center p-4 border-b">
+            <a href="index.html" class="block max-w-[100px] w-full">
+                    <img src="assets/images/logo.png" alt="Boutique Designer Studio Logo" class="logo-img">
+                </a>
+            <button id="close-mobile-menu" class="text-gray-700 hover:text-primary transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            </div>
+            <div>
+                <div class="grid grid-cols-2 gap-3 p-4 border-b">
+                    <div class="relative block text-start h-auto" id="language-dropdown-mobile">
+                    <button type="button"
+                        class="inline-flex !leading-[1.4] items-center md:text-base text-sm rounded-tl-xl rounded-br-xl h-full justify-start text-start w-full text-black border border-black px-4 py-[7.5px] bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary"
+                        id="language-button-mobile">
+                        <span id="selected-language-mobile" class="flex-1">English</span>
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </button>
+                    <div
+                        class="origin-top-right absolute rounded-tl-xl rounded-br-xl end-0 mt-2 w-full shadow-lg bg-white border-black border transition-all transform duration-100 hidden"
+                        id="language-menu-mobile">
+                        <div >
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="English">English</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="Spanish">Spanish</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="French">French</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="German">German</a>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="booking.html" class="btn !px-4 !py-2.5 btn-secondary">Book Now</a>
+                </div>
+                <ul class="flex flex-col space-y-2.5 md:text-base text-sm p-4 m-4 border rounded-tl-xl rounded-br-xl shadow-sm">
+                    <li> <a href="service-list.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Service</a>
+                    </li>
+                    <li> <a href="about.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">About</a>
+                    </li>
+                    <li> <a href="blog.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Blog</a>
+                    </li>
+                    <li> <a href="faq.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Faq</a>
+                    </li>
+                    <li> <a href="contact.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Contact</a>
+                    </li>
+                </ul>
+                <div class="p-4 border-t">
+                    <div class="p-4 border space-y-2.5 shadow-sm md:text-base text-sm rounded-tl-xl rounded-br-xl">
+                        <span class="flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                        </span>
+                        <div class="flex items-center">
+                            <p>Follow Us :</p>
+                            <div class="flex items-center gap-4 ms-4">
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

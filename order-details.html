@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Waste Management | WorkDo</title>
+        <meta name="author" content="Workdo" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="description"
+            content="Waste Management by Workdo is a smart solution to manage waste collection, disposal schedules, and environmental requests efficiently.">
+        <meta name="keywords"
+            content="Waste Management, Waste Collection, Workdo, Disposal Management, Collection Scheduling, Environmental Requests, Waste Dashboard">
+        <link rel="icon" href="assets/images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <script src="assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div
+            class="bg-primary text-white py-2.5 relative overflow-hidden hidden lg:block">
+            <div class="md:container w-full mx-auto px-4">
+                <p class="text-center text-sm">"Manage waste responsibly for a cleaner tomorrow."</p>
+            </div>
+        </div>
+        <header
+            class="sticky top-0 w-full z-[3] bg-white shadow-sm transition-all">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="logo-col flex-1">
+                        <h1>
+                            <a href="index.html"
+                                class="md:max-w-[140px] max-w-[110px] w-full block">
+                                <img src="assets/images/logo.png"
+                                    alt="Waste Management Logo" loading="lazy">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="hidden lg:block">
+                        <ul class="flex items-center lg:gap-x-8 gap-x-4">
+                            <li>
+                                <a href="service-list.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Service</a>
+                            </li>
+                            <li> <a href="about.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">About</a>
+                            </li>
+                            <li> <a href="blog.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Faq</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="hover:text-primary font-medium transition-all duration-300 capitalize">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div
+                        class="hidden lg:flex items-center gap-x-4 justify-end flex-1">
+                        <div
+                            class="relative md:inline-block hidden text-start h-auto"
+                            id="language-dropdown-desktop">
+                            <button type="button"
+                                class="inline-flex items-center h-full justify-center min-w-28 rounded-tl-lg rounded-br-lg text-black border border-black lg:px-4 px-3 py-2 bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary !leading-[1.4]"
+                                id="language-button-desktop">
+                                <span id="selected-language-desktop"
+                                    class="flex-1">English</span>
+                                <i class="fas fa-chevron-down ms-2"></i>
+                            </button>
+                            <div
+                                class="origin-top-right absolute end-0 mt-2 w-full shadow-lg rounded-tl-lg rounded-br-lg overflow-hidden bg-white ring-1 border border-black ring-black ring-opacity-5 focus:outline-none transition-all transform duration-100 hidden"
+                                id="language-menu-desktop">
+                                <div >
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="English">English</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="Spanish">Spanish</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="French">French</a>
+                                    <a href="javascript:void(0)"
+                                        class="block px-4 py-2 text-black transition-all duration-300 hover:bg-primary hover:text-white"
+                                        data-lang="German">German</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="booking.html"
+                            class="btn !px-4 !py-2.5">Book Now</a>
+                    </div>
+                    <button class="lg:hidden" id="mobile-menu-toggle">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="lg:py-16 py-10 relative z-[1]">
+                <div class="common-banner-bg absolute inset-0 w-full h-full z-[-1]">
+                    <img src="assets/images/common-banner-bg.png" alt="background-image" loading="lazy" class="w-full h-full object-cover rtl:scale-x-[-1]">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="md:container w-full mx-auto px-4">
+                    <div class="text-white text-center">
+                        <h2 class="lg:text-5xl sm:text-4xl text-3xl !leading-[1] font-semibold font-heading">Order Details</h2>
+                        <ul class="md:mt-4 mt-3 flex flex-wrap items-center  capitalize justify-center md:text-base text-sm">
+                            <li class="flex items-center capitalize">
+                                <a href="index.html">Home</a>
+                                <i class="fas fa-chevron-right mx-2 text-xs rtl:scale-x-[-1]"></i>
+                            </li>
+                            <li class="capitalize">Order Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        <section class="py-10 lg:py-16">
+            <div class="md:container mx-auto px-4 w-full">
+                <!-- Order Header & Stats -->
+                <div class="bg-white rounded-tl-3xl rounded-br-3xl border p-4 md:p-6 mb-3 md:mb-6">
+                    <!-- Header Section -->
+                    <div
+                        class="flex flex-wrap sm:justify-between items-center gap-4 md:gap-6 mb-4 md:mb-6">
+                        <div class="flex items-center gap-4">
+                            <div>
+                                <h2 class="text-2xl md:text-3xl text-primary mb-1">Order #WM-2024-001</h2>
+                            <span class="text-sm">Expected: Jan 17, 2024</span>
+                            </div>
+                        </div>
+                            <div
+                                class="px-3 py-2 rounded-tl-lg rounded-br-lg text-sm bg-secondary font-semibold text-center">
+                                <i class="fas fa-truck me-2"></i>Out for Collection
+                            </div>
+                    </div>
+                    <!-- Stats Section -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div
+                            class="bg-gray-50 rounded-tl-2xl rounded-br-2xl border border-gray-200 p-4 md:p-6 sm:justify-center flex gap-4 items-center">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center">
+                                <i class="fas fa-weight-hanging text-primary md:text-xl text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="md:text-2xl text-xl text-primary font-bold mb-1 !leading-[1]">15 kg</h3>
+                                <p class="md:text-base text-sm">Total Weight</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gray-50 rounded-tl-2xl rounded-br-2xl border border-gray-200 p-4 md:p-6 sm:justify-center flex gap-4 items-center">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center">
+                                <i class="fas fa-dollar-sign text-primary md:text-xl text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="md:text-2xl text-xl text-primary font-bold mb-1 !leading-[1]">$45.00</h3>
+                                <p class="md:text-base text-sm">Total Cost</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gray-50 rounded-tl-2xl rounded-br-2xl border border-gray-200 p-4 md:p-6 sm:justify-center flex gap-4 items-center">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center">
+                                <i class="fas fa-clock text-primary md:text-xl text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="md:text-2xl text-xl text-primary font-bold mb-1 !leading-[1]">2 Days</h3>
+                                <p class="md:text-base text-sm">Collection Time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-4 md:gap-6 mb-3 md:mb-6">
+                    <!-- Collection Information -->
+                    <div class="bg-white rounded-xl shadow-sm border p-4 md:p-6">
+                        <h3 class="text-xl mb-4 md:mb-6 flex items-center text-primary">
+                            <i class="fas fa-map-marker-alt me-3 text-primary"></i>
+                            Collection Information
+                        </h3>
+                        <div class="space-y-4 ">
+                            <div class="flex">
+                                <div
+                                    class="w-10 h-10 flex-shrink-0 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center me-4">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div class="md:space-y-4 space-y-2">
+                                    <span class="text-primary font-medium">Pickup Location</span>
+                                    <p class="font-medium">John Smith</p>
+                                    <p class="text-sm">123 Business Street, New York, NY 10001</p>
+                                    <p class="text-sm flex items-center"><i class="fas fa-phone me-2"></i>+1 (555)
+                                        123-4567</p>
+                                    <p class="text-sm flex items-center"><i class="fas fa-sticky-note me-2"></i>Leave
+                                        bins at side entrance</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div
+                                    class="w-10 h-10 flex-shrink-0 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center me-4">
+                                    <i class="fas fa-building text-primary"></i>
+                                </div>
+                                <div class="md:space-y-4 space-y-2">
+                                    <span class="text-primary font-medium">Processing Center</span>
+                                    <p class="font-medium">EcoWaste Facility</p>
+                                    <p class="text-sm">456 Recycling Avenue, Brooklyn, NY 11201</p>
+                                    <p class="text-sm flex items-center"><i class="fas fa-phone me-2"></i>+1 (555)
+                                        987-6543</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Driver Information -->
+                    <div class="rounded-xl shadow-sm border p-4 md:p-6">
+                        <h3 class="text-xl mb-4 md:mb-6 flex items-center text-primary">
+                            <i class="fas fa-truck me-3 text-primary"></i>
+                             Driver Information
+                        </h3>
+                        <div class="flex items-center mb-4 md:mb-6">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-tl-lg rounded-br-lg flex items-center justify-center me-4">
+                                <i class="fas fa-user text-primary"></i>
+                            </div>
+                            <div class="space-y-2">
+                                <h4>Michael Johnson</h4>
+                                <div class="flex items-center text-sm">
+                                    <div class="flex text-yellow-400 me-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-xs">Driver ID: DRV-2024-089</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-4 md:mb-6 md:text-base text-sm">
+                            <li class="flex justify-between">
+                                <span>Vehicle:</span>
+                                <span>Waste Truck #WT-401</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>License:</span>
+                                <span>NYC-8847</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span>Capacity:</span>
+                                <div class="flex items-center">
+                                    <span class="me-2">85% Full</span>
+                                    <span class="px-2 py-1 bg-primary text-white text-xs rounded-full">Good</span>
+                                </div>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Experience:</span>
+                                <span>5+ Years</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Shift:</span>
+                                <span>Morning (6AM - 2PM)</span>
+                            </li>
+                        </ul>
+                            <a href="tel:+15559876543" class="btn w-full">
+                                <i class="fas fa-phone"></i>Call
+                            </a>
+                    </div>
+                    <!-- Live Tracking -->
+                    <div class="bg-white rounded-xl shadow-sm border p-3 md:p-6">
+                        <h3 class="text-xl mb-4 md:mb-6 flex items-center text-primary">
+                            <i class="fas fa-truck me-3 text-primary"></i>
+                             Live Tracking
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="tracking-card flex items-start active">
+                                <div
+                                    class="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-tl-xl rounded-br-lg flex items-center justify-center me-4 mt-1">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center mb-1">
+                                        <h3>Order Placed</h3>
+                                        <span class="px-2 py-1 bg-primary text-white text-xs  rounded-full">DONE</span>
+                                    </div>
+                                    <p class="text-sm">Order confirmed and payment processed</p>
+                                    <p class="text-xs mt-1">January 15, 2024 at 10:30 AM</p>
+                                </div>
+                            </div>
+                            <div class="tracking-card flex items-start active">
+                                <div
+                                    class="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-tl-xl rounded-br-lg flex items-center justify-center me-4 mt-1">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center mb-1">
+                                        <h3>Collection Scheduled</h3>
+                                        <span class="px-2 py-1 bg-primary text-white text-xs rounded-full uppercase">DONE</span>
+                                    </div>
+                                    <p class="text-sm">Route optimized and driver assigned</p>
+                                    <p class="text-xs mt-1">January 16, 2024 at 2:30 PM</p>
+                                </div>
+                            </div>
+                            <div class="tracking-card flex items-start active">
+                                <div
+                                    class="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-tl-xl rounded-br-lg flex items-center justify-center me-4 mt-1">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center mb-1">
+                                        <h3>Out For Collection</h3>
+                                        <span class="px-2 py-1 bg-primary text-white text-xs rounded-full uppercase">DONE</span>
+                                    </div>
+                                    <p class="text-sm">Driver en route to pickup location</p>
+                                    <p class="text-xs mt-1">Started: Today at 1:15 PM</p>
+                                </div>
+                            </div>
+                            <div class="tracking-card flex items-start">
+                                <div
+                                    class="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-tl-xl rounded-br-lg flex items-center justify-center me-4 mt-1">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center mb-1">
+                                        <h3>Collection Complete</h3>
+                                        <span
+                                            class="px-2 py-1 bg-primary text-white text-xs rounded-full uppercase">PENDING</span>
+                                    </div>
+                                    <p class="text-sm">Waste collected and processing initiated</p>
+                                    <p class="text-xs mt-1">Estimated: Today at 2:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+                    <!-- Order Summary -->
+                    <div class="bg-gray-50 rounded-tl-lg rounded-br-lg border p-4 md:p-6">
+                        <h3 class="text-xl mb-4 md:mb-6 flex items-center text-primary">
+                            <i class="fas fa-receipt me-3 text-primary"></i>
+                            Order Summary
+                        </h3>
+                        <ul class="space-y-3 md:text-base text-sm">
+                            <li class="flex justify-between">
+                                <span>Service Type:</span>
+                                <span>Recyclable Collection</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Weight:</span>
+                                <span>15 kg</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Distance:</span>
+                                <span>12.5 km</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Base Cost:</span>
+                                <span>$40.00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Service Fee:</span>
+                                <span>$5.00</span>
+                            </li>
+                            <li class="flex justify-between pt-4 border-t border-gray-200 mt-4 md:text-base text-sm">
+                                <span>Total:</span>
+                                <span>$45.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Package Details -->
+                    <div class="bg-gray-50 rounded-xl shadow-sm border p-4 md:p-6">
+                        <h3 class="text-xl mb-4 md:mb-6 flex items-center text-primary">
+                            <i class="fas fa-box me-3 text-primary"></i>
+                            Package Details
+                        </h3>
+                        <ul class="space-y-3 md:text-base text-sm">
+                            <li class="flex justify-between">
+                                <span>Waste Category:</span>
+                                <span>Mixed Recyclables</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Container Size:</span>
+                                <span>240L Bin</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Items Count:</span>
+                                <span>25 Items</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Safety Status:</span>
+                                <span>Safe</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Collection Priority:</span>
+                                <span>Standard</span>
+                            </li>
+                            <li class="flex justify-between pt-4 border-t border-gray-200 mt-4 md:text-base text-sm">
+                                <span>Package ID:</span>
+                                <span>#PKG-WM-001</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- Creative Footer -->
+        <footer class="bg-primary text-white relative overflow-hidden z-[1] lg:pt-16 pt-10">
+            <div class="md:container w-full mx-auto px-4">
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-8 gap-6">
+                    <!-- Company Info -->
+                    <div class="space-y-4">
+        <a href="index.html" class="md:max-w-[140px] max-w-[110px] w-full block">
+                            <img src="assets/images/footer-logo.png" alt="Waste Management" class="w-full h-full">
+                        </a>
+                        <p>Creating a cleaner, greener future through innovative waste management solutions.</p>
+                        <div class="flex md:gap-x-4 gap-x-3">
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="javascript:;" class="md:w-10 md:h-10 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-recycle me-2"></i>
+                            Quick Links
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li><a href="service-list.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Service</a></li>
+                            <li><a href="about.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>About</a></li>
+                            <li><a href="faq.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>FAQ</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-right me-2 text-xs"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-leaf me-2"></i>
+                            Our Services
+                        </h3>
+                        <ul class="space-y-2 md:text-base text-sm">
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-trash me-2"></i>Waste Collection</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-recycle me-2"></i>Recycling Services</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-truck me-2"></i>Disposal Management</a></li>
+                            <li class="flex items-center"><a href="service-list.html"><i class="fas fa-calendar me-2"></i>Scheduled Pickups</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl text-white flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            Get In Touch
+                        </h3>
+                        <div class="space-y-3">
+                            <p class="flex items-start">
+                                <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                                123 Green Street, Eco City, EC 12345
+                            </p>
+                            <p class="flex items-center">
+                        <i class="fas fa-phone me-3"></i>
+                       <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope me-3"></i>
+                        <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                    </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Bar -->
+                <div class="border-t border-white/20 md:mt-8 mt-6 md:py-6 py-4 flex flex-col sm:flex-row justify-between sm:items-center">
+                    <p class="mb-3 sm:mb-0">
+                        © 2025 Waste Management by WorkDo. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-4 md:text-base text-sm">
+                        <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 end-0 z-50 bg-white shadow-xl transform translate-x-full rtl:-translate-x-full transition-transform duration-300 max-w-[325px] w-full ease-in-out overflow-y-auto">
+            <div class="flex justify-between items-center p-4 border-b">
+            <a href="index.html" class="block max-w-[100px] w-full">
+                    <img src="assets/images/logo.png" alt="Boutique Designer Studio Logo" class="logo-img">
+                </a>
+            <button id="close-mobile-menu" class= hover:text-primary transition-colors">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            </div>
+            <div>
+                <div class="grid grid-cols-2 gap-3 p-4 border-b">
+                    <div class="relative block text-start h-auto" id="language-dropdown-mobile">
+                    <button type="button"
+                        class="inline-flex !leading-[1.4] items-center md:text-base text-sm rounded-tl-lg rounded-br-lg h-full justify-start text-start w-full text-black border border-black px-4 py-[7.5px] bg-white font-medium focus:outline-none focus:ring- focus:ring-offset-2 focus:ring-primary"
+                        id="language-button-mobile">
+                        <span id="selected-language-mobile" class="flex-1">English</span>
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </button>
+                    <div
+                        class="origin-top-right absolute rounded-tl-lg rounded-br-lg end-0 mt-2 w-full shadow-lg bg-white border-black border transition-all transform duration-100 hidden"
+                        id="language-menu-mobile">
+                        <div >
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="English">English</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="Spanish">Spanish</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="French">French</a>
+                        <a href="javascript:void(0)"
+                            class="block px-4 py-2 md:text-base text-sm transition-all duration-300 hover:bg-light"
+                            data-lang="German">German</a>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="booking.html" class="btn !px-4 !py-2.5 btn-secondary">Book Now</a>
+                </div>
+                <ul class="flex flex-col space-y-2.5 md:text-base text-sm p-4 m-4 border rounded-tl-lg rounded-br-lg shadow-sm">
+                    <li> <a href="service-list.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Service</a>
+                    </li>
+                    <li> <a href="about.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">About</a>
+                    </li>
+                    <li> <a href="blog.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Blog</a>
+                    </li>
+                    <li> <a href="faq.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Faq</a>
+                    </li>
+                    <li> <a href="contact.html"
+                        class="hover:text-primary transition-all duration-300 capitalize">Contact</a>
+                    </li>
+                </ul>
+                <div class="p-4 border-t">
+                    <div class="p-4 border space-y-2.5 shadow-sm md:text-base text-sm rounded-tl-lg rounded-br-lg">
+                        <span class="flex items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@clearbin.com">info@clearbin.com</a>
+                        </span>
+                        <div class="flex items-center">
+                            <p>Follow Us :</p>
+                            <div class="flex items-center gap-4 ms-4">
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="javascript:;" class="hover:scale-105 transition-all duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
